@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'izq der'
+        'izq der'
+        'izq der'
+        'izq der';
+    gap: 5px;
+    border: 5px solid red;
+}
+
+.izq {
+    grid-area: izq;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.der {
+    grid-area: der;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
