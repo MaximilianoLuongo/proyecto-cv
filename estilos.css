@@ -6,6 +6,12 @@
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
+.centrado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
@@ -17,17 +23,38 @@
         'izq der';
     gap: 5px;
     border: 5px solid red;
+    width: 75%;
 }
 
 .izq {
     grid-area: izq;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+}
+
+.imagen{
+    border-radius: 20px;
+}
+
+.perfil {
+    width: 75%;
+}
+ 
+.datos {
+    display: flex;
+}
+
+
+.datos p {
+    margin-left: 10px;
 }
 
 .der {
     grid-area: der;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
