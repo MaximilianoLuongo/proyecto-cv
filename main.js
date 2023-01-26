@@ -40,5 +40,8 @@ const persona = fetch('https://randomuser.me/api/')
           </a>`;
     })
 
-
+document.getElementById('boton').addEventListener("click", function(){
+    console.log("hice click");
+    location.reload();
+})
 
