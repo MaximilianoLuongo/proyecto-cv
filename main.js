@@ -40,6 +40,7 @@ const persona = fetch('https://randomuser.me/api/')
           </a>`;
     })
 
+  //Recargar pagina - Pedir nuevo usuario
 document.getElementById('boton').addEventListener("click", function(){
     console.log("hice click");
     location.reload();
